@@ -1,12 +1,11 @@
 require 'pry'
 
-class Guess
+class Deck
 
-  attr_reader :response, :card
+  attr_reader :cards
 
-  def initialize (response, card)
-    @respone = response
-    @card = card
+  def initialize (cards = [])
+    @cards = cards
   end
 
 end
