@@ -37,7 +37,7 @@ class GuessTest < Minitest::Test
     guess_1 = Guess.new("10 of Hearts", two_clubs)
     puts two_clubs.value + " of " + two_clubs.suit
     guess_2 = Guess.new("2 of Hearts", two_clubs)
-    assert_equal "Incorrect!", guess_2.feedback
+    assert_equal "Incorrect.", guess_2.feedback
   end
 
 end

@@ -22,7 +22,6 @@ class DeckTest < Minitest::Test
   end
 
   def test_it_can_count_cards
-    skip
     two_clubs = Card.new("2", "Clubs")
     three_hearts = Card.new("2", "Hearts")
     ace_spades = Card.new("2", "Spades")

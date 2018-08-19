@@ -3,12 +3,11 @@ require './lib/card'
 
 class Guess
 
-  attr_reader :response, :card, :correct
+  attr_reader :response, :card
 
   def initialize (response, card)
     @response = response
     @card = card
-    @correct
   end
 
   def correct?
@@ -26,7 +25,7 @@ class Guess
     if card_string == @response
       return "Correct!"
     else
-      return "Incorrect!"
+      return "Incorrect."
     end
   end
 
