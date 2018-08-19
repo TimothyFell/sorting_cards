@@ -20,4 +20,6 @@ class CardTest < Minitest::Test
     assert_equal "Clubs", two_clubs.suit
   end
 
+  #blargidy blarg
+
 end
