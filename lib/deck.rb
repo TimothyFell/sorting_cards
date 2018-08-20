@@ -1,4 +1,6 @@
 require 'pry'
+require './lib/card'
+require './lib/guess'
 
 class Deck
 
