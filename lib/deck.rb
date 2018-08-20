@@ -1,4 +1,6 @@
 require 'pry'
+require './lib/card'
+require './lib/guess'
 
 class Deck
 
@@ -6,6 +8,10 @@ class Deck
 
   def initialize (cards = [])
     @cards = cards
+  end
+
+  def count
+    cards.length
   end
 
 end
