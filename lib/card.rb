@@ -21,7 +21,6 @@ suit = "Diamonds"
 
   def card_id
     card_id = card_value_ids[@value] + card_suit_ids[@suit]
-    binding.pry
   end
 
 end
