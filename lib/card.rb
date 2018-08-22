@@ -4,8 +4,6 @@ class Card
 
   attr_reader :value, :suit
 
-value = "3"
-suit = "Diamonds"
   def initialize (value, suit)
     @value = value
     @suit = suit
