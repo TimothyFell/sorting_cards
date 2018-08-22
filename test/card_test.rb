@@ -20,6 +20,16 @@ class CardTest < Minitest::Test
     assert_equal "Hearts", hearts_10.suit
   end
 
+  def test__value_hash_returns_integer
+    hearts_10 = Card.new("10", "Hearts")
+    assert_equal 34, hearts_10.card_value_ids[hearts_10.value]
+  end
+
+  def test_suit_hash_returns_integer
+    hearts_10 = Card.new("10", "Hearts")
+    assert_equal 2, hearts_10.card_suit_ids[hearts_10.suit]
+  end
+
   def test_card_can_create_unique_card_id
     hearts_10 = Card.new("10", "Hearts")
     spades_king = Card.new("King", "Spades")
