@@ -1,16 +1,12 @@
 require 'pry'
-require './lib/card'
-require './lib/guess'
-require './lib/deck'
 
 class Round
 
-  attr_reader :deck, :guesses, :current_card
+  attr_reader :deck, :guesses
 
   def initialize (deck)
     @deck = deck
     @guesses = []
-    @current_card
   end
 
   def current_card
@@ -22,7 +18,6 @@ class Round
     guess_response = "#{guess[:value]} of #{guess[:suit]}"
     new_guess = Guess.new(guess_response, current_card)
     @guesses << new_guess
-    # deck.cards.shift
     deck.cards.push(deck.cards.shift)
     return new_guess
   end
